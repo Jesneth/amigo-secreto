@@ -43,7 +43,7 @@ function actualizarLista(){
         item.textContent = listaDeNombres[i];
         //9 Agregar elementos a la lista.
         listaNombreDeAmigo.appendChild(item);
-        
+    
     }
 }
 
@@ -63,13 +63,12 @@ function sortearAmigo(){
     //13 Mostrar el resultado 
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>Tu amigo secreto es: <strong>${nombreSorteado}</strong></li>`;
-    
-    
    
     if (listaDeNombres.length === 1) {
         setTimeout(reiniciarJuego, 3000); // Reinicia el juego después de 3 segundos
     }
     actualizarLista();
+
      
 }
 
