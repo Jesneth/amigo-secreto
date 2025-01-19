@@ -20,8 +20,7 @@ function agregarAmigo(){
         //4 Actualizar el array de amigos
         listaDeNombres.push(nombreAmigo);
         actualizarLista();
-        limpiarCampo()
-       
+        limpiarCampo()   
     }
 }
 agregarAmigo()
@@ -42,8 +41,7 @@ function actualizarLista(){
         const item = document.createElement("li");
         item.textContent = listaDeNombres[i];
         //9 Agregar elementos a la lista.
-        listaNombreDeAmigo.appendChild(item);
-    
+        listaNombreDeAmigo.appendChild(item); 
     }
 }
 
@@ -67,9 +65,7 @@ function sortearAmigo(){
     if (listaDeNombres.length === 1) {
         setTimeout(reiniciarJuego, 3000); // Reinicia el juego después de 3 segundos
     }
-    actualizarLista();
-
-     
+    actualizarLista(); 
 }
 
 function reiniciarJuego(){
@@ -80,7 +76,6 @@ function reiniciarJuego(){
    
     document.getElementById("listaAmigos").innerHTML = "";
     document.getElementById("resultado").innerHTML = "";
-
 }
 
 
